@@ -1,0 +1,5 @@
+.env
+/.DevDocs
+/storage/*
+/.vscode
+

@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteBase /
+
+# If it's a valid directory, serve it
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Trailing Slash Removal:
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# If it's a real asset (css/js), serve it
+RewriteCond %{REQUEST_FILENAME} -f
+
+# Don't change the URL and stop running further rules
+RewriteRule ^ - [L]
+
+# Send everything else to the index.php bootstrapper
+RewriteRule ^ index.php [L]
+
+
+

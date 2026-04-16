@@ -1,4 +1,4 @@
-# Savo Starter
+# Savo Docs
 
 Savo Starter is the official project skeleton for the Savo Framework. It provides a pre-configured, professional folder structure designed for building high-performance brand websites, marketing pages, and studio portfolios with minimal overhead.
 

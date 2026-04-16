@@ -69,7 +69,7 @@
 
 .docs-title {
   margin-top: 22px;
-  font-family: "Syne", var(--font-display);
+  font-family: "Poppins", var(--font-display);
   font-weight: 800;
   font-size: clamp(2.8rem, 7vw, 5.8rem);
   line-height: 0.98;
@@ -104,7 +104,7 @@
   min-height: 52px;
   padding: 0 22px;
   border-radius: 999px;
-  font-family: "Syne", var(--font-display);
+  font-family: "Poppins", var(--font-display);
   font-weight: 700;
   transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
 }
@@ -214,7 +214,7 @@
 
 .docs-section-title {
   margin-top: 14px;
-  font-family: "Syne", var(--font-display);
+  font-family: "Poppins", var(--font-display);
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 800;
 }
@@ -268,7 +268,7 @@
 .docs-card h3,
 .docs-structure-card h3,
 .docs-helper-card h3 {
-  font-family: "Syne", var(--font-display);
+  font-family: "Poppins", var(--font-display);
   font-size: 1.38rem;
   margin-bottom: 12px;
 }

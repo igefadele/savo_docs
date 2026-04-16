@@ -33,8 +33,8 @@
                     </li>
                 </ul>
                 <div class="header-cta-group d-flex align-items-center gap-3">
-                    <a href="/contact" class="btn btn-savadub-header-ghost">Contact</a>
-                    <a href="/contact/#hire" class="btn btn-savadub-header-cta">Hire Us</a>
+                    <a href="https://savadub.com/contact" class="btn btn-savadub-header-ghost">Contact</a>
+                    <a href="https://savadub.com/contact/#hire" class="btn btn-savadub-header-cta">Hire Us</a>
                 </div>
             </div>
 

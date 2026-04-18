@@ -10,7 +10,9 @@ class ComposerStaticInit57274eaa4aa087b1b60f792066c1f91a
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        'b3c620597a78ade9c739af7fe5dae827' => __DIR__ . '/..' . '/savadub/savo/src/Helpers/helpers.php',
+        '0d0c35aaa2a61c572d2457a5cb069e58' => __DIR__ . '/..' . '/savadub/savv/src/Helpers/helpers.php',
+        'b2a45922b0573e03f847b9fb60924488' => __DIR__ . '/..' . '/savadub/savv/src/Helpers/routes.php',
+        '80e54616a5a0516e4233f709562ce105' => __DIR__ . '/..' . '/savadub/savv/src/Helpers/layouts.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -19,7 +21,7 @@ class ComposerStaticInit57274eaa4aa087b1b60f792066c1f91a
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
-            'Savo\\' => 5,
+            'Savv\\' => 5,
         ),
         'P' => 
         array (
@@ -52,9 +54,9 @@ class ComposerStaticInit57274eaa4aa087b1b60f792066c1f91a
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
-        'Savo\\' => 
+        'Savv\\' => 
         array (
-            0 => __DIR__ . '/..' . '/savadub/savo/src',
+            0 => __DIR__ . '/..' . '/savadub/savv/src',
         ),
         'PhpOption\\' => 
         array (
@@ -129,14 +131,19 @@ class ComposerStaticInit57274eaa4aa087b1b60f792066c1f91a
         'PhpOption\\Option' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/Option.php',
         'PhpOption\\Some' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/Some.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
-        'Savo\\Core\\Application' => __DIR__ . '/..' . '/savadub/savo/src/Core/Application.php',
-        'Savo\\Providers\\AppProvider' => __DIR__ . '/..' . '/savadub/savo/src/Providers/AppProvider.php',
-        'Savo\\Utils\\Config' => __DIR__ . '/..' . '/savadub/savo/src/Utils/Config.php',
-        'Savo\\Utils\\Log' => __DIR__ . '/..' . '/savadub/savo/src/Utils/Log.php',
-        'Savo\\Utils\\Request' => __DIR__ . '/..' . '/savadub/savo/src/Utils/Request.php',
-        'Savo\\Utils\\Response' => __DIR__ . '/..' . '/savadub/savo/src/Utils/Response.php',
-        'Savo\\Utils\\Router' => __DIR__ . '/..' . '/savadub/savo/src/Utils/Router.php',
-        'Savo\\Utils\\Validator' => __DIR__ . '/..' . '/savadub/savo/src/Utils/Validator.php',
+        'Savv\\Console\\Commands\\MakeConfig' => __DIR__ . '/..' . '/savadub/savv/src/Console/Commands/MakeConfig.php',
+        'Savv\\Console\\Commands\\MakeController' => __DIR__ . '/..' . '/savadub/savv/src/Console/Commands/MakeController.php',
+        'Savv\\Console\\Commands\\RouteCache' => __DIR__ . '/..' . '/savadub/savv/src/Console/Commands/RouteCache.php',
+        'Savv\\Console\\Kernel' => __DIR__ . '/..' . '/savadub/savv/src/Console/Kernel.php',
+        'Savv\\Controllers\\SystemController' => __DIR__ . '/..' . '/savadub/savv/src/Controllers/SystemController.php',
+        'Savv\\Core\\Application' => __DIR__ . '/..' . '/savadub/savv/src/Core/Application.php',
+        'Savv\\Providers\\AppProvider' => __DIR__ . '/..' . '/savadub/savv/src/Providers/AppProvider.php',
+        'Savv\\Utils\\Config' => __DIR__ . '/..' . '/savadub/savv/src/Utils/Config.php',
+        'Savv\\Utils\\Log' => __DIR__ . '/..' . '/savadub/savv/src/Utils/Log.php',
+        'Savv\\Utils\\Request' => __DIR__ . '/..' . '/savadub/savv/src/Utils/Request.php',
+        'Savv\\Utils\\Response' => __DIR__ . '/..' . '/savadub/savv/src/Utils/Response.php',
+        'Savv\\Utils\\Router' => __DIR__ . '/..' . '/savadub/savv/src/Utils/Router.php',
+        'Savv\\Utils\\Validator' => __DIR__ . '/..' . '/savadub/savv/src/Utils/Validator.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',

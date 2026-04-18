@@ -3,8 +3,8 @@
 namespace App\Controllers;
 
 use PHPMailer\PHPMailer\PHPMailer;
-use Savo\Utils\Log;
-use Savo\Utils\Validator; 
+use Savv\Utils\Log;
+use Savv\Utils\Validator; 
 
 /**
  * Handles submission of the public contact form endpoint.
@@ -17,7 +17,7 @@ class ContactController {
      * The method returns JSON responses for success, validation errors, invalid
      * request methods, bot submissions, configuration issues, and mail transport failures.
      *
-     * @return \Savo\Utils\Response JSON response describing the submission outcome.
+     * @return \Savv\Utils\Response JSON response describing the submission outcome.
      */
     public function submit() {
         if (request()->method() !== "POST") {

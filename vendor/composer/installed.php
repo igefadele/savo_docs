@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'savadub/savo-starter',
+        'name' => 'savadub/savv-docs',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ddd2ed74beef6339dac49d791e480c4b46722c68',
+        'reference' => '6074bd0ca555e5ac5bee0737c3632f06d301caf5',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -28,21 +28,19 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'savadub/savo' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '2c2ff6892ff8da78788ec5536b5de2096a7256a9',
+        'savadub/savv' => array(
+            'pretty_version' => 'v2.3.1',
+            'version' => '2.3.1.0',
+            'reference' => '7adb3b866e1ec52b8ef7edbf8026addabd7abd28',
             'type' => 'library',
-            'install_path' => __DIR__ . '/../savadub/savo',
-            'aliases' => array(
-                0 => '9999999-dev',
-            ),
+            'install_path' => __DIR__ . '/../savadub/savv',
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'savadub/savo-starter' => array(
+        'savadub/savv-docs' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ddd2ed74beef6339dac49d791e480c4b46722c68',
+            'reference' => '6074bd0ca555e5ac5bee0737c3632f06d301caf5',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

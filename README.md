@@ -1,19 +1,19 @@
-# Savo Docs
+# Savv Docs
 
-Savo Starter is the official project skeleton for the Savo Framework. It provides a pre-configured, professional folder structure designed for building high-performance brand websites, marketing pages, and studio portfolios with minimal overhead.
+Savv Starter is the official project skeleton for the Savv Framework. It provides a pre-configured, professional folder structure designed for building high-performance brand websites, marketing pages, and studio portfolios with minimal overhead.
 
-This project is a Skeleton, meaning it contains the application-level files (Views, Routes, Controllers) while the "engine" logic is maintained separately in the Savo Framework package.
+This project is a Skeleton, meaning it contains the application-level files (Views, Routes, Controllers) while the "engine" logic is maintained separately in the Savv Framework package.
 
 
-# Savo Framework
+# Savv Framework
 
-Savo is a lightweight PHP framework for brand sites, marketing sites, studio websites, landing pages, and other presentation-first products that still need modern web capabilities.
+Savv is a lightweight PHP framework for brand sites, marketing sites, studio websites, landing pages, and other presentation-first products that still need modern web capabilities.
 
 It is intentionally small. The goal is to keep the developer experience familiar without dragging in a large framework, deep abstractions, or layers of boilerplate just to render pages, handle forms, or ship a polished public website.
 
-Savo leans on plain modern PHP, file-based page routing, small utility classes, and a direct coding style that is easy to read, easy to trace, and easy to extend.
+Savv leans on plain modern PHP, file-based page routing, small utility classes, and a direct coding style that is easy to read, easy to trace, and easy to extend.
 
-## Why Savo
+## Why Savv
 
 - Lightweight core with a very small dependency surface.
 - File-based routing for page views so common website pages do not need controller ceremony.
@@ -24,7 +24,7 @@ Savo leans on plain modern PHP, file-based page routing, small utility classes, 
 - PWA-ready setup with `manifest.json`, `sw.js`, and offline assets.
 - Easy-to-understand structure suited to freelancers, agencies, studios, and product teams shipping brochure and marketing sites.
 
-## What Savo Is Best For
+## What Savv Is Best For
 
 - Agency and studio websites
 - Product landing pages
@@ -33,7 +33,7 @@ Savo leans on plain modern PHP, file-based page routing, small utility classes, 
 - Campaign microsites
 - Public brand platforms with a few dynamic endpoints
 
-If your project needs complex ORM workflows, enterprise module systems, or a very large plugin ecosystem, a full-stack framework may be a better fit. Savo is optimized for clarity, speed, and low overhead.
+If your project needs complex ORM workflows, enterprise module systems, or a very large plugin ecosystem, a full-stack framework may be a better fit. Savv is optimized for clarity, speed, and low overhead.
 
 ## Project Structure
 
@@ -89,11 +89,11 @@ The framework boots through [public/index.php](/Users/MrFIA/Documents/WORKSPACE/
 
 ## Routing
 
-Savo supports two routing styles.
+Savv supports two routing styles.
 
 ### 1. File-Based Page Routing
 
-The default web routing flow is intentionally simple. If a request comes in for `/about`, Savo looks for:
+The default web routing flow is intentionally simple. If a request comes in for `/about`, Savv looks for:
 
 ```text
 views/about.php
@@ -153,7 +153,7 @@ $url = route('blog.show', ['slug' => 'hello-world']);
 
 ## Middleware
 
-Savo supports route middleware and middleware groups.
+Savv supports route middleware and middleware groups.
 
 ### Register Middleware Aliases
 
@@ -193,7 +193,7 @@ router()->post('contact', [ContactController::class, 'submit'])
 ```php
 namespace App\Middleware;
 
-use Savo\Utils\Request;
+use Savv\Utils\Request;
 
 class Authenticate
 {
@@ -210,7 +210,7 @@ class Authenticate
 
 ## Helpers
 
-Savo ships with a small set of global helpers in [savo/Helpers/helpers.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savo/Helpers/helpers.php:1).
+Savv ships with a small set of global helpers in [savv/Helpers/helpers.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savv/Helpers/helpers.php:1).
 
 ### `request()`
 
@@ -228,7 +228,7 @@ Creates a response object.
 
 ```php
 return response('<h1>Hello World</h1>', 200)
-    ->header('X-Powered-By', 'Savo');
+    ->header('X-Powered-By', 'Savv');
 
 return response()->json([
     'status' => 'success',
@@ -289,7 +289,7 @@ logger()->error('Mail failed', ['reason' => 'SMTP timeout']);
 
 ### Request
 
-[savo/Utils/Request.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savo/Utils/Request.php:1) provides:
+[savv/Utils/Request.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savv/Utils/Request.php:1) provides:
 
 - `input()`
 - `all()`
@@ -304,7 +304,7 @@ logger()->error('Mail failed', ['reason' => 'SMTP timeout']);
 
 ### Response
 
-[savo/Utils/Response.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savo/Utils/Response.php:1) provides:
+[savv/Utils/Response.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savv/Utils/Response.php:1) provides:
 
 - `setStatus()`
 - `header()`
@@ -315,11 +315,11 @@ logger()->error('Mail failed', ['reason' => 'SMTP timeout']);
 
 ### Config
 
-[savo/Utils/Config.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savo/Utils/Config.php:1) loads plain PHP arrays from `configs/` and caches them per request.
+[savv/Utils/Config.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savv/Utils/Config.php:1) loads plain PHP arrays from `configs/` and caches them per request.
 
 ### Validator
 
-[savo/Utils/Validator.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savo/Utils/Validator.php:1) supports:
+[savv/Utils/Validator.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savv/Utils/Validator.php:1) supports:
 
 - `required`
 - `email`
@@ -330,7 +330,7 @@ logger()->error('Mail failed', ['reason' => 'SMTP timeout']);
 
 ### Log
 
-[savo/Utils/Log.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savo/Utils/Log.php:1) writes daily log files to:
+[savv/Utils/Log.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/savv/Utils/Log.php:1) writes daily log files to:
 
 ```text
 storage/logs/YYYY-MM-DD.log
@@ -338,7 +338,7 @@ storage/logs/YYYY-MM-DD.log
 
 ## Configs
 
-Savo configs are plain PHP arrays stored in `configs/`.
+Savv configs are plain PHP arrays stored in `configs/`.
 
 Example from [configs/mail.php](/Users/MrFIA/Documents/WORKSPACE/WORDPRESS/savadub/configs/mail.php:1):
 
@@ -382,7 +382,7 @@ Views are standard PHP files inside `views/`.
 Most pages in this starter project follow this pattern:
 
 ```php
-$pageTitle = 'About — Savo';
+$pageTitle = 'About — Savv';
 $pageDescription = '...';
 $extraCSS = '<link rel="stylesheet" href="/assets/css/about.css">';
 
@@ -431,7 +431,7 @@ composer dump-autoload
 
 ## Philosophy
 
-Savo is for developers who want:
+Savv is for developers who want:
 
 - less setup
 - less abstraction
@@ -440,4 +440,4 @@ Savo is for developers who want:
 - more control over what ships
 - a framework that stays out of the way on content-heavy public websites
 
-If that sounds like your kind of workflow, Savo is doing its job.
+If that sounds like your kind of workflow, Savv is doing its job.

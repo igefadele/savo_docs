@@ -144,34 +144,35 @@
             "install-path": "../phpoption/phpoption"
         },
         {
-            "name": "savadub/savo",
-            "version": "dev-main",
-            "version_normalized": "dev-main",
+            "name": "savadub/savv",
+            "version": "v2.3.1",
+            "version_normalized": "2.3.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/igefadele/savo_framework.git",
-                "reference": "2c2ff6892ff8da78788ec5536b5de2096a7256a9"
+                "url": "https://github.com/igefadele/savv_framework.git",
+                "reference": "7adb3b866e1ec52b8ef7edbf8026addabd7abd28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/igefadele/savo_framework/zipball/2c2ff6892ff8da78788ec5536b5de2096a7256a9",
-                "reference": "2c2ff6892ff8da78788ec5536b5de2096a7256a9",
+                "url": "https://api.github.com/repos/igefadele/savv_framework/zipball/7adb3b866e1ec52b8ef7edbf8026addabd7abd28",
+                "reference": "7adb3b866e1ec52b8ef7edbf8026addabd7abd28",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0",
                 "vlucas/phpdotenv": "^5.5"
             },
-            "time": "2026-04-16T14:15:33+00:00",
-            "default-branch": true,
+            "time": "2026-04-18T09:30:56+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "Savo\\": "src/"
+                    "Savv\\": "src/"
                 },
                 "files": [
-                    "src/Helpers/helpers.php"
+                    "src/Helpers/helpers.php",
+                    "src/Helpers/routes.php",
+                    "src/Helpers/layouts.php"
                 ]
             },
             "license": [
@@ -183,19 +184,19 @@
                     "email": "developer@savadub.com"
                 }
             ],
-            "description": "The Savo PHP Framework - Lightweight, fast, and WordPress-friendly.",
+            "description": "The Savv PHP Framework - Lightweight, fast, and WordPress-friendly.",
             "keywords": [
                 "framework",
                 "php",
                 "savadub",
-                "savo",
+                "savv",
                 "wordpress-fallback"
             ],
             "support": {
-                "source": "https://github.com/igefadele/savo_framework/tree/main",
-                "issues": "https://github.com/igefadele/savo_framework/issues"
+                "source": "https://github.com/igefadele/savv_framework/tree/v2.3.1",
+                "issues": "https://github.com/igefadele/savv_framework/issues"
             },
-            "install-path": "../savadub/savo"
+            "install-path": "../savadub/savv"
         },
         {
             "name": "symfony/polyfill-ctype",

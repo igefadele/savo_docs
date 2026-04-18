@@ -1,6 +1,6 @@
 {
-    "name": "savadub/savo-starter",
-    "description": "The official skeleton for starting a new Savo project.",
+    "name": "savadub/savv-docs",
+    "description": "The official documentation for the Savv Web Framework.",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "savadub/savo": "dev-main"
+        "savadub/savv": "^2.0"
     }, 
     "autoload": {
         "psr-4": {
